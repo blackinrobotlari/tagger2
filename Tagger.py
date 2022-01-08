@@ -128,7 +128,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"[{random.choice(emoji)}](tg://user?id={usr.id}) "
       if event.chat_id not in emoji_calisan:
-        await event.respond("Əməliyyat Uğurla Dayandırıldı\n\n**https://t.me/Cat_House_Gurup**🤓")
+        await event.respond("Dayandım\n\n**Da Nolub?**😒")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
@@ -176,7 +176,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"🤓 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in anlik_calisan:
-        await event.respond("Əməliyyat Uğurla Dayandırıldıu\n\n**https://t.me/Cat_House_Gurups**🤓")
+        await event.respond("Dayandım\n\n**Da Nolub?**😒")
         return
       if usrnum == 5:
         await client.send_message(event.chat_id, f"{usrtxt}\n\n{msg}")
@@ -218,7 +218,7 @@ async def mentionall(event):
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
-    return await event.respond("**Bu əmrdən yalnız idarəçilər istifadə edə bilər😒**")
+    return await event.respond("**Bu əmrdən yalnız idarəçilər istifadə edə bilər😒****")
   
   if event.pattern_match.group(1):
     mode = "text_on_cmd"
@@ -241,7 +241,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"**🤓 - [{usr.first_name}](tg://user?id={usr.id}) \n**"
       if event.chat_id not in tekli_calisan:
-        await event.respond("**Əməliyyat Uğurla Dayandırıldı\n\n**https://t.me/Cat_House_Gurups**🤓****")
+        await event.respond("**Dayandım\n\n**Da Nolub?**😒**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, f"{usrtxt} {msg}")
@@ -259,7 +259,7 @@ async def mentionall(event):
       usrnum += 1
       usrtxt += f"🤓 - [{usr.first_name}](tg://user?id={usr.id}) \n"
       if event.chat_id not in tekli_calisan:
-        await event.respond("Əməliyyat Uğurla Dayandırıldı\n\n**https://t.me/Cat_House_Gurups**🤓**")
+        await event.respond("Dayandım\n\n**Da Nolub?**😒**")
         return
       if usrnum == 1:
         await client.send_message(event.chat_id, usrtxt, reply_to=msg)
