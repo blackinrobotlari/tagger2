@@ -21,7 +21,7 @@ anlik_calisan = []
 
 tekli_calisan = []
 
-@client.on(events.NewMessage(pattern='^(?i)/cancel'))
+@client.on(events.NewMessage(pattern='^(?i)/dur'))
 async def cancel(event):
   global emoji_calisan
   emoji_calisan.remove(event.chat_id)
@@ -58,7 +58,7 @@ async def help(event):
   helptext = "**Çox funksiyalı Tag Botunu Tapmağa Çalışan Qrup Sahibləri Ͳαɠεɾ Βσʈ🐺 Size Görə:\n\n🤓 5-li tağ\n🤓 Emoji tağ\n🤓 Təkli tağ\n🤓 Yalnız adminləri tağ edər\n🤓\n\n Belə Çox funksiyalı Ͳαɠεɾ Βσʈ🐺'u Qrupunuza administrator kimi əlavə edib asanlıqla üzv ola bilərsiniz, etiketlər təyin edə bilərsiniz🤓 **"
   await event.reply(helptext,
                     buttons=(
-                      [Button.url('Botu Gruba Eklə🤓', 'https://t.me/BStaggerbot?startgroup=a')],
+                      [Button.url('Botu Gruba Eklə 🤓', 'https://t.me/BStaggerbot?startgroup=a')],
                     ),
                     link_preview=False
                    )
@@ -77,7 +77,7 @@ emoji = " ❤️‍🔥 🧡 💛 💚 💙 💜 ❤️‍🩹 🤍 🤎 🙂 �
         "😻 😼 😽 🙀 😿 😾".split(" ")
 
 
-@client.on(events.NewMessage(pattern="^/etag ?(.*)"))
+@client.on(events.NewMessage(pattern="^/emtag ?(.*)"))
 async def mentionall(event):
   global emoji_calisan
   if event.is_private:
