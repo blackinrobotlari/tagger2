@@ -48,7 +48,7 @@ async def help(event):
                       [Button.url('Məni Gruba Eklə➕', 'https://t.me/BStaggerbot?startgroup=a')],
                       [Button.url('⚕️Support', 'https://t.me/BLACK_MMC')],
                       [Button.url('Söhbət gurupu 🐈', 'https://t.me/Cat_House_Gurups')],
-		      [Button.url('👨🏻‍💻Sahibi, 'https://t.me/A_l_i_y_e_v_d_i')],
+		      [Button.url('👨🏻‍💻Sahibi', 'https://t.me/A_l_i_y_e_v_d_i')],
                     ),
                     link_preview=False
                    )
